@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bowling Solitaire</title>
+</head>
+
+<body>
+  <h1>Bowling Solitaire</h1>
+
+  <div id="game-container"></div>
+
+  <h2>How to Play</h2>
+  <p>The game is played by drawing cards one at a time. Each card can either be played on one or more of the pin piles (on the left) or one of the two ball piles (on the right). Click on a pile to play the current card there. The possible moves are highlighted. Cards must be played in order of rank on the pin piles. The pins are ordered bottom-to-top, left-to-right. If a card cannot be played on a pin pile, it must be played on a ball pile.</p>
+  <p>When the third card is played on a ball pile, the ball is thrown and a score is calculated based on the number of nonempty pin piles. If all of the pins are filled before filling the first ball pile, a strike is scored. If all of the pins are filled after filling the first ball pile but before filling the second ball pile, a spare is scored. When both balls have been thrown, the game is over.</p>
+
+  <template id="card-template">
+    <div class="card">
+      <div class="suit">♠️</div>
+      <div class="rank">A</div>
+    </div>
+  </template>
+
+  <template id="deck-template">
+    <div class="deck">
+      <div class="card card-back">
+        <div class="deck-counter"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="pile-template">
+    <div class="pile"></div>
+  </template>
+</body>
+</html>

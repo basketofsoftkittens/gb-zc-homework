@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#game-container {
+  position: relative;
+
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+
+  background: forestgreen;
+}
+
+.card {
+  position: absolute;
+
+  width: 50px;
+  height: 80px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+  background: white;
+}
+
+.card-back {
+  background: linear-gradient(
+    90deg,
+    rgba(166, 5, 0, 1) 0%,
+    rgba(255, 250, 135, 1) 100%
+  );
+}
+
+.suit {
+  text-align: center;
+  font-size: 30px;
+}
+
+.rank {
+  text-align: center;
+  font-size: 25px;
+}
+
+.deck {
+  position: absolute;
+}
+
+.deck-counter {
+  text-align: center;
+  font-size: 25px;
+}
+
+.pile {
+  position: absolute;
+
+  width: 54px;
+  height: 84px;
+
+  background: #61bd53;
+  border-radius: 4px;
+}
+
+.pile-highlight {
+  box-shadow: 0px 0px 8px 2px white;
+}
